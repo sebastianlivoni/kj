@@ -7,9 +7,6 @@ socket.on("serial-data", (msg) => {
   dataEl.textContent += msg + "\n";
 });*/
 
-const dataEl = document.getElementById("data");
-dataEl.textContent += "nice" + "\n";
-
 /* Leaflet */
 var map = L.map("map").setView([55.757107790110624, 9.420052567154611], 20);
 
