@@ -89,6 +89,16 @@ class Central: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
         peripheral.writeValue(data, for: characteristic, type: .withResponse)
         print("Sent: \(text)")
     }
+    
+    func sendData(data: Data) {
+        guard let peripheral = discoveredPeripheral,
+              let characteristic = writeCharacteristic else {
+            print("Not connected or characteristic unavailable")
+            return
+        }
+        peripheral.writeValue(data, for: characteristic, type: .withResponse)
+        print("Sent: \(data)")
+    }
 
     func peripheral(_ peripheral: CBPeripheral,
                     didWriteValueFor characteristic: CBCharacteristic,

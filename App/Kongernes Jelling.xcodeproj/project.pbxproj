@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		96991DE62EABF7F40056F0BC /* Kongernes Jelling App Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96BF7D282EAD0C5000675A2C /* stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BF7D272EAD0C5000675A2C /* stone.png */; };
+		96BF7D292EAD0C5000675A2C /* stone.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BF7D272EAD0C5000675A2C /* stone.png */; };
 		96C20F072EAD063700CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE32EAD062600CA5631 /* layers-2x.png */; };
 		96C20F082EAD063700CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE52EAD062600CA5631 /* leaflet.js */; };
 		96C20F092EAD063700CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE42EAD062600CA5631 /* leaflet.css */; };
@@ -61,6 +63,7 @@
 /* Begin PBXFileReference section */
 		96991DC82EABE92B0056F0BC /* Kongernes Jelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96BF7D272EAD0C5000675A2C /* stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stone.png; path = ../Web/public/stone.png; sourceTree = SOURCE_ROOT; };
 		96C20EE02EAD062600CA5631 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../Web/public/index.html; sourceTree = SOURCE_ROOT; };
 		96C20EE12EAD062600CA5631 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../Web/public/index.js; sourceTree = SOURCE_ROOT; };
 		96C20EE22EAD062600CA5631 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = layers.png; path = ../Web/public/layers.png; sourceTree = SOURCE_ROOT; };
@@ -151,6 +154,7 @@
 				96C20EEC2EAD062600CA5631 /* marker-icon-2x.png */,
 				96C20EED2EAD062600CA5631 /* marker-shadow.png */,
 				96C20EEE2EAD062600CA5631 /* style.css */,
+				96BF7D272EAD0C5000675A2C /* stone.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -271,6 +275,7 @@
 				96C20F092EAD063700CA5631 /* leaflet.css in Resources */,
 				96C20F0A2EAD063700CA5631 /* layers.png in Resources */,
 				96C20F0B2EAD063700CA5631 /* marker-icon-2x.png in Resources */,
+				96BF7D292EAD0C5000675A2C /* stone.png in Resources */,
 				96C20F0C2EAD063700CA5631 /* leaflet-src.js in Resources */,
 				96C20F0D2EAD063700CA5631 /* index.js in Resources */,
 				96C20F0E2EAD063700CA5631 /* leaflet-src.esm.js in Resources */,
@@ -290,6 +295,7 @@
 				96C20F152EAD063700CA5631 /* index.html in Resources */,
 				96C20F162EAD063700CA5631 /* marker-icon.png in Resources */,
 				96C20F172EAD063700CA5631 /* layers.png in Resources */,
+				96BF7D282EAD0C5000675A2C /* stone.png in Resources */,
 				96C20F182EAD063700CA5631 /* index.js in Resources */,
 				96C20F192EAD063700CA5631 /* layers-2x.png in Resources */,
 				96C20F1A2EAD063700CA5631 /* leaflet-src.js in Resources */,

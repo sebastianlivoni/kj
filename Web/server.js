@@ -20,12 +20,38 @@ port.on("open", () => {
   console.log("✅ Serial port is open");
 });
 
-port.on("data", (data) => {
-  const message = data.toString("utf8");
-  console.log("Received:", message);
+let buffer = "";
 
-  // Send data to all connected web clients
-  io.emit("serial-data", message);
+port.on("data", (data) => {
+  buffer += data.toString("utf8");
+
+  try {
+    // Keep trying to parse JSON as long as there’s something valid in the buffer
+    while (true) {
+      const start = buffer.indexOf("{");
+      const end = buffer.indexOf("}", start);
+
+      if (start === -1 || end === -1) break; // no full object yet
+
+      const potentialJson = buffer.slice(start, end + 1);
+
+      try {
+        const json = JSON.parse(potentialJson);
+
+        // Emit the valid JSON object
+        io.emit("serial-data", json);
+        console.log("✅ Valid JSON sent to clients:", json);
+
+        // Remove the processed part from the buffer
+        buffer = buffer.slice(end + 1);
+      } catch {
+        // JSON.parse failed — wait for more data
+        break;
+      }
+    }
+  } catch (err) {
+    console.warn("⚠️ Error processing buffer:", err.message);
+  }
 });
 
 port.on("error", (err) => {

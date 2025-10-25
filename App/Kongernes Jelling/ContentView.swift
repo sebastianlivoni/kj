@@ -22,11 +22,30 @@ private class DialogPresenter: WebPage.DialogPresenting {
     }
 }
 
+class MessageHandler: NSObject, WKScriptMessageHandler {
+    var lat: Double?
+    var lng: Double?
+    
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if let body = message.body as? [String: Any],
+           let lat = body["lat"] as? Double,
+           let lng = body["lng"] as? Double {
+            print("Received coordinates: lat \(lat), lng \(lng)")
+            
+            self.lat = lat
+            self.lng = lng
+        } else {
+            print("Unexpected message body: \(message.body)")
+        }
+    }
+}
+
 struct ContentView: View {
     private var central = Central()
     
     @State private var page: WebPage
     private var dialogPresenter: DialogPresenter = .init()
+    private var messageHandler: MessageHandler = .init()
     
     @State private var name: String = ""
     @State private var showAlert: Bool = false
@@ -38,6 +57,8 @@ struct ContentView: View {
         var configuration = WebPage.Configuration()
                 
         var navigationPreference = WebPage.NavigationPreferences()
+        
+        configuration.userContentController.add(messageHandler, name: "test")
         
         navigationPreference.allowsContentJavaScript = true
         navigationPreference.preferredHTTPSNavigationPolicy = .keepAsRequested
@@ -62,7 +83,6 @@ struct ContentView: View {
                 
                 dialogPresenter.promptHandler = {
                     await withCheckedContinuation { continuation in
-                        // Show the alert
                         Task { @MainActor in
                             showingAlert = true
                             
@@ -73,10 +93,9 @@ struct ContentView: View {
                             
                             let skipAction = {
                                 showingAlert = false
-                                continuation.resume(returning: "") // or nil if you prefer
+                                continuation.resume(returning: "")
                             }
 
-                            // Temporarily store these actions in @State or some container
                             self.submitHandler = submitAction
                             self.skipHandler = skipAction
                         }
@@ -87,9 +106,24 @@ struct ContentView: View {
             .alert("Alert Title!", isPresented: $showingAlert) {
                 TextField("Enter name", text: $name)
                 Button("Submit") {
-                    submitHandler?()
+                    Task {
+                        submitHandler?()
+                        
+                        let obj = [
+                            "name": name,
+                            "lat": messageHandler.lat,
+                            "long": messageHandler.lng
+                        ]
+                        
+                        guard let jsonData = try? JSONSerialization.data(withJSONObject: obj) else {
+                            skipHandler?()
+                            return
+                        }
+                        
+                        central.sendData(data: jsonData)
+                    }
                 }
-                Button("Skip") {
+                Button("Cancel") {
                     skipHandler?()
                 }
             } message: {
