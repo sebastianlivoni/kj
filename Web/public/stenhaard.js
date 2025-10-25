@@ -1,3 +1,46 @@
+class FIFOQueue {
+  constructor() {
+    this.queue = [];
+    this.maxSize = 5; // Maximum size of the queue
+  }
+
+  // Add an element to the front of the queue
+  enqueue(item) {
+    // If the queue is full, remove the oldest (back) element
+    if (this.size() >= this.maxSize) {
+      this.dequeue();
+    }
+    this.queue.unshift(item); // Add the item to the front of the array
+  }
+
+  // Remove and return the oldest element (FIFO)
+  dequeue() {
+    if (this.isEmpty()) {
+      throw new Error("Queue is empty");
+    }
+    return this.queue.pop(); // Remove from the back (oldest item)
+  }
+
+  // Check if the queue is empty
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+
+  // Peek at the oldest element without removing it
+  peek() {
+    if (this.isEmpty()) {
+      throw new Error("Queue is empty");
+    }
+    return this.queue[this.queue.length - 1]; // Peek at the last (oldest) item
+  }
+
+  // Get the current size of the queue
+  size() {
+    return this.queue.length;
+  }
+}
+
+/* --- Rune Converter Functions --- */
 function RuneConverter(letter) {
   let rune;
   letter = letter.toLowerCase();
@@ -63,48 +106,49 @@ function RuneConverter(letter) {
       break;
     default:
       rune = " ";
-      console.log("Not a letter");
   }
   return rune;
 }
 
 function RuneTransliterator(word) {
-  const iterator = word[Symbol.iterator]();
-  let theChar = iterator.next();
-  let runeWord = "";
-
-  while (!theChar.done) {
-    runeWord = runeWord.concat(RuneConverter(theChar.value));
-    theChar = iterator.next();
-  }
-  return runeWord;
+  return [...word].map(RuneConverter).join("");
 }
 
-function createMessageText(messages){
-    textbox = document.getElementById("textBox");
-    messages.forEach(element => {
-        runicMessage = RuneTransliterator(element);
-        let newDiv = document.createElement("div");
-        newDiv.appendChild(document.createTextNode(runicMessage));
-        textbox.appendChild(newDiv);
-    });
+/* --- DOM Interaction --- */
+const fifoQueue = new FIFOQueue(10);
+
+function renderQueue() {
+  const textbox = document.getElementById("textBox");
+  textbox.innerHTML = ""; // Clear previous messages
+
+  fifoQueue.queue.forEach((element) => {
+    const runicMessage = RuneTransliterator(element);
+    const div = document.createElement("div");
+    div.textContent = runicMessage;
+    textbox.appendChild(div);
+  });
 }
 
-document.addEventListener("DOMContentLoaded", async (event)=>{
-    let response = await fetch("//localhost:3000/runestonemessages");
-    response = await response.json();
-    createMessageText(response);
-})
+/* --- Initial Fetch --- */
+document.addEventListener("DOMContentLoaded", async () => {
+  const res = await fetch("//localhost:3000/runestonemessages");
+  const data = await res.json();
 
-let textfield = document.getElementById("userMessage");
-textfield.addEventListener("keyup", async ({key})=>{
-    if (key == "Enter"){
-        await fetch("//localhost:3000/runestonemessages",{method: "POST", headers:{'Content-Type': 'application/json'}, body: JSON.stringify({text: textfield.value})})
-    }
-})
+  // Fill the queue and render
+  data.forEach((msg) => fifoQueue.enqueue(msg));
+  renderQueue();
+});
 
+/* --- Server-Sent Events --- */
 const evtSource = new EventSource("//localhost:3000/runestonemessages");
+evtSource.onmessage = (event) => {
+  fifoQueue.enqueue(event.data);
+  renderQueue();
+};
 
-evtSource.onmessage = (event) =>{
-    createMessageText(event.data);
-}
+/* --- Socket.io --- */
+const socket = io();
+socket.on("serial-data", (msg) => {
+  fifoQueue.enqueue(msg.name);
+  renderQueue();
+});

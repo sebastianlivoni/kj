@@ -11,7 +11,8 @@ import SwiftUI
 struct Kongernes_Jelling_App_ClipApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            AddNameView()
         }
     }
 }

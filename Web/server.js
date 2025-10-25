@@ -1,28 +1,67 @@
-const express = require('express')
-const http = require("http")
-const { Server } = require("socket.io")
-const { SerialPort } = require("serialport")
-const bodyparser = require("body-parser")
+const express = require("express");
+const http = require("http");
+const { Server } = require("socket.io");
+const { SerialPort } = require("serialport");
+const bodyparser = require("body-parser");
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
+class FIFOQueue {
+  constructor() {
+    this.queue = [];
+    this.maxSize = 5; // Maximum size of the queue
+  }
 
-let runemessages = ["message1","message2","message3","message4","message5"];
+  // Add an element to the front of the queue
+  enqueue(item) {
+    // If the queue is full, remove the oldest (back) element
+    if (this.size() >= this.maxSize) {
+      this.dequeue();
+    }
+    this.queue.unshift(item); // Add the item to the front of the array
+  }
+
+  // Remove and return the oldest element (FIFO)
+  dequeue() {
+    if (this.isEmpty()) {
+      throw new Error("Queue is empty");
+    }
+    return this.queue.pop(); // Remove from the back (oldest item)
+  }
+
+  // Check if the queue is empty
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+
+  // Peek at the oldest element without removing it
+  peek() {
+    if (this.isEmpty()) {
+      throw new Error("Queue is empty");
+    }
+    return this.queue[this.queue.length - 1]; // Peek at the last (oldest) item
+  }
+
+  // Get the current size of the queue
+  size() {
+    return this.queue.length;
+  }
+}
+
+const fifoQueue = new FIFOQueue();
 
 // Serve static files (your website)
 app.use(express.static("public"));
-app.use(bodyparser.json())
+app.use(bodyparser.json());
 
-app.get('/stenhaard', (req,res) => {
-  res.sendFile(__dirname+ "/public/stenhaard.html");
-})
-app.get('/runestonemessages', (req,res) =>{
-  res.send(JSON.stringify(runemessages))
-})
-app.post('/runestonemessages', (req,res) =>{
-  runemessages[0] = req.body.text;
-})
+app.get("/runestonemessages", (req, res) => {
+  res.send(JSON.stringify(fifoQueue.queue));
+});
+
+app.post("/runestonemessages", (req, res) => {
+  //runemessages.pop().runemessages[0] = req.body.text;
+});
 
 // Setup serial port
 const port = new SerialPort({
@@ -55,6 +94,9 @@ port.on("data", (data) => {
         // Emit the valid JSON object
         io.emit("serial-data", json);
         console.log("✅ Valid JSON sent to clients:", json);
+
+        const { name } = json;
+        fifoQueue.enqueue(name);
 
         // Remove the processed part from the buffer
         buffer = buffer.slice(end + 1);

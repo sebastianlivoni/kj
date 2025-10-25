@@ -92,6 +92,7 @@
 		96991DED2EABF8930056F0BC /* Exceptions for "Kongernes Jelling" folder in "Kongernes Jelling App Clip" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AddNameView.swift,
 				Central.swift,
 				ContentView.swift,
 			);

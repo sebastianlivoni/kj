@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src ='./stenhaard.js' defer></script>
-</head>
-<body>
-    <div id="textBox">
-    </div>
-
-    <div>
-        <input type ="text", id = "userMessage">
-    </div>
-
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./stenhaard.js" defer></script>
+  </head>
+  <body>
+    <div id="textBox"></div>
 
     <style>
-        body{
-            margin: 0;
-            background-image: url("theRock.jpg");
-            background-size: cover;
-            background-position-y: -160px;
-        }
-  
+      body {
+        margin: 0;
+        background-image: url("theRock.jpg");
+        background-size: cover;
+        background-position-y: -160px;
+      }
 
-        #textBox{
-            text-align: center;
-            color:rgb(36, 0, 0);
-            font-size: 37px;
-        }
+      #textBox {
+        text-align: center;
+        color: rgb(36, 0, 0);
+        font-size: 37px;
+        margin-top: 100px;
+      }
 
-        .msg{
-            margin-top: 20px;            
-        }
-
+      .msg {
+        margin-top: 20px;
+      }
     </style>
-</body>
+  </body>
 </html>
