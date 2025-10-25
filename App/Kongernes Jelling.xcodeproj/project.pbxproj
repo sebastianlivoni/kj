@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9682FE162EACDACF00DFEB12 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE132EACDACF00DFEB12 /* index.js */; };
+		9682FE172EACDACF00DFEB12 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE142EACDACF00DFEB12 /* style.css */; };
+		9682FE182EACDACF00DFEB12 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE122EACDACF00DFEB12 /* index.html */; };
+		9682FE192EACDACF00DFEB12 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE132EACDACF00DFEB12 /* index.js */; };
+		9682FE1A2EACDACF00DFEB12 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE142EACDACF00DFEB12 /* style.css */; };
+		9682FE1B2EACDACF00DFEB12 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 9682FE122EACDACF00DFEB12 /* index.html */; };
+		96991DE62EABF7F40056F0BC /* Kongernes Jelling App Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96C20E822EACE70200CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E782EACE70200CA5631 /* marker-shadow.png */; };
+		96C20E832EACE70200CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7A2EACE70200CA5631 /* leaflet.css */; };
+		96C20E842EACE70200CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E752EACE70200CA5631 /* layers-2x.png */; };
+		96C20E852EACE70200CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7D2EACE70200CA5631 /* leaflet-src.esm.js */; };
+		96C20E862EACE70200CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E742EACE70200CA5631 /* layers.png */; };
+		96C20E872EACE70200CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7C2EACE70200CA5631 /* leaflet-src.js */; };
+		96C20E882EACE70200CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E772EACE70200CA5631 /* marker-icon-2x.png */; };
+		96C20E892EACE70200CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E762EACE70200CA5631 /* marker-icon.png */; };
+		96C20E8A2EACE70200CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7B2EACE70200CA5631 /* leaflet.js */; };
+		96C20E8B2EACE70200CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E782EACE70200CA5631 /* marker-shadow.png */; };
+		96C20E8C2EACE70200CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7A2EACE70200CA5631 /* leaflet.css */; };
+		96C20E8D2EACE70200CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E752EACE70200CA5631 /* layers-2x.png */; };
+		96C20E8E2EACE70200CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7D2EACE70200CA5631 /* leaflet-src.esm.js */; };
+		96C20E8F2EACE70200CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E742EACE70200CA5631 /* layers.png */; };
+		96C20E902EACE70200CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7C2EACE70200CA5631 /* leaflet-src.js */; };
+		96C20E912EACE70200CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E772EACE70200CA5631 /* marker-icon-2x.png */; };
+		96C20E922EACE70200CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E762EACE70200CA5631 /* marker-icon.png */; };
+		96C20E932EACE70200CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E7B2EACE70200CA5631 /* leaflet.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96991DE42EABF7F40056F0BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96991DC02EABE92B0056F0BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96991DD92EABF7F40056F0BC;
+			remoteInfo = "Kongernes Jelling App Clip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96991DEB2EABF7F40056F0BC /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				96991DE62EABF7F40056F0BC /* Kongernes Jelling App Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9682FE122EACDACF00DFEB12 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		9682FE132EACDACF00DFEB12 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+		9682FE142EACDACF00DFEB12 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		96991DC82EABE92B0056F0BC /* Kongernes Jelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C20E742EACE70200CA5631 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
+		96C20E752EACE70200CA5631 /* layers-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "layers-2x.png"; sourceTree = "<group>"; };
+		96C20E762EACE70200CA5631 /* marker-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-icon.png"; sourceTree = "<group>"; };
+		96C20E772EACE70200CA5631 /* marker-icon-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-icon-2x.png"; sourceTree = "<group>"; };
+		96C20E782EACE70200CA5631 /* marker-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-shadow.png"; sourceTree = "<group>"; };
+		96C20E7A2EACE70200CA5631 /* leaflet.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = leaflet.css; sourceTree = "<group>"; };
+		96C20E7B2EACE70200CA5631 /* leaflet.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = leaflet.js; sourceTree = "<group>"; };
+		96C20E7C2EACE70200CA5631 /* leaflet-src.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "leaflet-src.js"; sourceTree = "<group>"; };
+		96C20E7D2EACE70200CA5631 /* leaflet-src.esm.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "leaflet-src.esm.js"; sourceTree = "<group>"; };
+		96C20E7E2EACE70200CA5631 /* leaflet-src.esm.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "leaflet-src.esm.js.map"; sourceTree = "<group>"; };
+		96C20E7F2EACE70200CA5631 /* leaflet-src.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "leaflet-src.js.map"; sourceTree = "<group>"; };
+		96C20E802EACE70200CA5631 /* leaflet.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = leaflet.js.map; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		96991DE72EABF7F40056F0BC /* Exceptions for "Kongernes Jelling App Clip" folder in "Kongernes Jelling App Clip" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 96991DD92EABF7F40056F0BC /* Kongernes Jelling App Clip */;
+		};
+		96991DED2EABF8930056F0BC /* Exceptions for "Kongernes Jelling" folder in "Kongernes Jelling App Clip" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Central.swift,
+				ContentView.swift,
+			);
+			target = 96991DD92EABF7F40056F0BC /* Kongernes Jelling App Clip */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		96991DCA2EABE92B0056F0BC /* Kongernes Jelling */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				96991DED2EABF8930056F0BC /* Exceptions for "Kongernes Jelling" folder in "Kongernes Jelling App Clip" target */,
+			);
+			path = "Kongernes Jelling";
+			sourceTree = "<group>";
+		};
+		96991DDB2EABF7F40056F0BC /* Kongernes Jelling App Clip */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				96991DE72EABF7F40056F0BC /* Exceptions for "Kongernes Jelling App Clip" folder in "Kongernes Jelling App Clip" target */,
+			);
+			path = "Kongernes Jelling App Clip";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96991DC52EABE92B0056F0BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96991DD72EABF7F40056F0BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9682FE152EACDACF00DFEB12 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				9682FE122EACDACF00DFEB12 /* index.html */,
+				9682FE132EACDACF00DFEB12 /* index.js */,
+				9682FE142EACDACF00DFEB12 /* style.css */,
+				96C20E812EACE70200CA5631 /* dist */,
+			);
+			name = public;
+			path = ../Web/public;
+			sourceTree = SOURCE_ROOT;
+		};
+		9682FE1C2EACDADE00DFEB12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9682FE152EACDACF00DFEB12 /* public */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96991DBF2EABE92B0056F0BC = {
+			isa = PBXGroup;
+			children = (
+				9682FE1C2EACDADE00DFEB12 /* Resources */,
+				96991DCA2EABE92B0056F0BC /* Kongernes Jelling */,
+				96991DDB2EABF7F40056F0BC /* Kongernes Jelling App Clip */,
+				96991DC92EABE92B0056F0BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96991DC92EABE92B0056F0BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96991DC82EABE92B0056F0BC /* Kongernes Jelling.app */,
+				96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C20E792EACE70200CA5631 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				96C20E742EACE70200CA5631 /* layers.png */,
+				96C20E752EACE70200CA5631 /* layers-2x.png */,
+				96C20E762EACE70200CA5631 /* marker-icon.png */,
+				96C20E772EACE70200CA5631 /* marker-icon-2x.png */,
+				96C20E782EACE70200CA5631 /* marker-shadow.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		96C20E812EACE70200CA5631 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				96C20E792EACE70200CA5631 /* images */,
+				96C20E7A2EACE70200CA5631 /* leaflet.css */,
+				96C20E7B2EACE70200CA5631 /* leaflet.js */,
+				96C20E7C2EACE70200CA5631 /* leaflet-src.js */,
+				96C20E7D2EACE70200CA5631 /* leaflet-src.esm.js */,
+				96C20E7E2EACE70200CA5631 /* leaflet-src.esm.js.map */,
+				96C20E7F2EACE70200CA5631 /* leaflet-src.js.map */,
+				96C20E802EACE70200CA5631 /* leaflet.js.map */,
+			);
+			path = dist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96991DC72EABE92B0056F0BC /* Kongernes Jelling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96991DD32EABE92C0056F0BC /* Build configuration list for PBXNativeTarget "Kongernes Jelling" */;
+			buildPhases = (
+				96991DC42EABE92B0056F0BC /* Sources */,
+				96991DC52EABE92B0056F0BC /* Frameworks */,
+				96991DC62EABE92B0056F0BC /* Resources */,
+				96991DEB2EABF7F40056F0BC /* Embed App Clips */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96991DE52EABF7F40056F0BC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				96991DCA2EABE92B0056F0BC /* Kongernes Jelling */,
+			);
+			name = "Kongernes Jelling";
+			packageProductDependencies = (
+			);
+			productName = "Kongernes Jelling";
+			productReference = 96991DC82EABE92B0056F0BC /* Kongernes Jelling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96991DD92EABF7F40056F0BC /* Kongernes Jelling App Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96991DE82EABF7F40056F0BC /* Build configuration list for PBXNativeTarget "Kongernes Jelling App Clip" */;
+			buildPhases = (
+				96991DD62EABF7F40056F0BC /* Sources */,
+				96991DD72EABF7F40056F0BC /* Frameworks */,
+				96991DD82EABF7F40056F0BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				96991DDB2EABF7F40056F0BC /* Kongernes Jelling App Clip */,
+			);
+			name = "Kongernes Jelling App Clip";
+			packageProductDependencies = (
+			);
+			productName = "Kongernes Jelling App Clip";
+			productReference = 96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96991DC02EABE92B0056F0BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					96991DC72EABE92B0056F0BC = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					96991DD92EABF7F40056F0BC = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 96991DC32EABE92B0056F0BC /* Build configuration list for PBXProject "Kongernes Jelling" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96991DBF2EABE92B0056F0BC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 96991DC92EABE92B0056F0BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96991DC72EABE92B0056F0BC /* Kongernes Jelling */,
+				96991DD92EABF7F40056F0BC /* Kongernes Jelling App Clip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96991DC62EABE92B0056F0BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C20E822EACE70200CA5631 /* marker-shadow.png in Resources */,
+				96C20E832EACE70200CA5631 /* leaflet.css in Resources */,
+				96C20E842EACE70200CA5631 /* layers-2x.png in Resources */,
+				96C20E852EACE70200CA5631 /* leaflet-src.esm.js in Resources */,
+				96C20E862EACE70200CA5631 /* layers.png in Resources */,
+				96C20E872EACE70200CA5631 /* leaflet-src.js in Resources */,
+				96C20E882EACE70200CA5631 /* marker-icon-2x.png in Resources */,
+				96C20E892EACE70200CA5631 /* marker-icon.png in Resources */,
+				96C20E8A2EACE70200CA5631 /* leaflet.js in Resources */,
+				9682FE162EACDACF00DFEB12 /* index.js in Resources */,
+				9682FE172EACDACF00DFEB12 /* style.css in Resources */,
+				9682FE182EACDACF00DFEB12 /* index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96991DD82EABF7F40056F0BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C20E8B2EACE70200CA5631 /* marker-shadow.png in Resources */,
+				96C20E8C2EACE70200CA5631 /* leaflet.css in Resources */,
+				96C20E8D2EACE70200CA5631 /* layers-2x.png in Resources */,
+				96C20E8E2EACE70200CA5631 /* leaflet-src.esm.js in Resources */,
+				96C20E8F2EACE70200CA5631 /* layers.png in Resources */,
+				96C20E902EACE70200CA5631 /* leaflet-src.js in Resources */,
+				96C20E912EACE70200CA5631 /* marker-icon-2x.png in Resources */,
+				96C20E922EACE70200CA5631 /* marker-icon.png in Resources */,
+				96C20E932EACE70200CA5631 /* leaflet.js in Resources */,
+				9682FE192EACDACF00DFEB12 /* index.js in Resources */,
+				9682FE1A2EACDACF00DFEB12 /* style.css in Resources */,
+				9682FE1B2EACDACF00DFEB12 /* index.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96991DC42EABE92B0056F0BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96991DD62EABF7F40056F0BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96991DE52EABF7F40056F0BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96991DD92EABF7F40056F0BC /* Kongernes Jelling App Clip */;
+			targetProxy = 96991DE42EABF7F40056F0BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		96991DD12EABE92C0056F0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96991DD22EABE92C0056F0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96991DD42EABE92C0056F0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "App needs bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.livoni.kj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96991DD52EABE92C0056F0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "App needs bluetooth access to connect to nearby devices.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.livoni.kj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96991DE92EABF7F40056F0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kongernes Jelling App Clip/Kongernes_Jelling_App_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kongernes Jelling App Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kongernes Jelling";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.livoni.kj.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96991DEA2EABF7F40056F0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Kongernes Jelling App Clip/Kongernes_Jelling_App_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6HH7K3R53J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kongernes Jelling App Clip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kongernes Jelling";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.livoni.kj.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96991DC32EABE92B0056F0BC /* Build configuration list for PBXProject "Kongernes Jelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96991DD12EABE92C0056F0BC /* Debug */,
+				96991DD22EABE92C0056F0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96991DD32EABE92C0056F0BC /* Build configuration list for PBXNativeTarget "Kongernes Jelling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96991DD42EABE92C0056F0BC /* Debug */,
+				96991DD52EABE92C0056F0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96991DE82EABF7F40056F0BC /* Build configuration list for PBXNativeTarget "Kongernes Jelling App Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96991DE92EABF7F40056F0BC /* Debug */,
+				96991DEA2EABF7F40056F0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96991DC02EABE92B0056F0BC /* Project object */;
+}
