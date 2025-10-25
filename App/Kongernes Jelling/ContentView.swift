@@ -39,6 +39,7 @@ struct ContentView: View {
                     page.load(html: contents, baseURL: baseUrl)
                 }
             }
+            .ignoresSafeArea()
         
         /*VStack(spacing: 20) {
             Text("BLE Central")

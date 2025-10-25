@@ -8,30 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		96991DE62EABF7F40056F0BC /* Kongernes Jelling App Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		96C20EA42EACE95A00CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E982EACE95A00CA5631 /* marker-shadow.png */; };
-		96C20EA52EACE95A00CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9E2EACE95A00CA5631 /* leaflet-src.js */; };
-		96C20EA62EACE95A00CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9C2EACE95A00CA5631 /* leaflet.css */; };
-		96C20EA72EACE95A00CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9D2EACE95A00CA5631 /* leaflet.js */; };
-		96C20EA82EACE95A00CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E962EACE95A00CA5631 /* marker-icon.png */; };
-		96C20EA92EACE95A00CA5631 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9A2EACE95A00CA5631 /* index.html */; };
-		96C20EAA2EACE95A00CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E952EACE95A00CA5631 /* layers-2x.png */; };
-		96C20EAB2EACE95A00CA5631 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EA32EACE95A00CA5631 /* style.css */; };
-		96C20EAC2EACE95A00CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9F2EACE95A00CA5631 /* leaflet-src.esm.js */; };
-		96C20EAD2EACE95A00CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E972EACE95A00CA5631 /* marker-icon-2x.png */; };
-		96C20EAE2EACE95A00CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E942EACE95A00CA5631 /* layers.png */; };
-		96C20EAF2EACE95A00CA5631 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9B2EACE95A00CA5631 /* index.js */; };
-		96C20EB02EACE95A00CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E982EACE95A00CA5631 /* marker-shadow.png */; };
-		96C20EB12EACE95A00CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9E2EACE95A00CA5631 /* leaflet-src.js */; };
-		96C20EB22EACE95A00CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9C2EACE95A00CA5631 /* leaflet.css */; };
-		96C20EB32EACE95A00CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9D2EACE95A00CA5631 /* leaflet.js */; };
-		96C20EB42EACE95A00CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E962EACE95A00CA5631 /* marker-icon.png */; };
-		96C20EB52EACE95A00CA5631 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9A2EACE95A00CA5631 /* index.html */; };
-		96C20EB62EACE95A00CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E952EACE95A00CA5631 /* layers-2x.png */; };
-		96C20EB72EACE95A00CA5631 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EA32EACE95A00CA5631 /* style.css */; };
-		96C20EB82EACE95A00CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9F2EACE95A00CA5631 /* leaflet-src.esm.js */; };
-		96C20EB92EACE95A00CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E972EACE95A00CA5631 /* marker-icon-2x.png */; };
-		96C20EBA2EACE95A00CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E942EACE95A00CA5631 /* layers.png */; };
-		96C20EBB2EACE95A00CA5631 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20E9B2EACE95A00CA5631 /* index.js */; };
+		96C20F072EAD063700CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE32EAD062600CA5631 /* layers-2x.png */; };
+		96C20F082EAD063700CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE52EAD062600CA5631 /* leaflet.js */; };
+		96C20F092EAD063700CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE42EAD062600CA5631 /* leaflet.css */; };
+		96C20F0A2EAD063700CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE22EAD062600CA5631 /* layers.png */; };
+		96C20F0B2EAD063700CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEC2EAD062600CA5631 /* marker-icon-2x.png */; };
+		96C20F0C2EAD063700CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE62EAD062600CA5631 /* leaflet-src.js */; };
+		96C20F0D2EAD063700CA5631 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE12EAD062600CA5631 /* index.js */; };
+		96C20F0E2EAD063700CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE72EAD062600CA5631 /* leaflet-src.esm.js */; };
+		96C20F0F2EAD063700CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EED2EAD062600CA5631 /* marker-shadow.png */; };
+		96C20F102EAD063700CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEB2EAD062600CA5631 /* marker-icon.png */; };
+		96C20F112EAD063700CA5631 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE02EAD062600CA5631 /* index.html */; };
+		96C20F122EAD063700CA5631 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEE2EAD062600CA5631 /* style.css */; };
+		96C20F132EAD063700CA5631 /* leaflet.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE42EAD062600CA5631 /* leaflet.css */; };
+		96C20F142EAD063700CA5631 /* marker-icon-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEC2EAD062600CA5631 /* marker-icon-2x.png */; };
+		96C20F152EAD063700CA5631 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE02EAD062600CA5631 /* index.html */; };
+		96C20F162EAD063700CA5631 /* marker-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEB2EAD062600CA5631 /* marker-icon.png */; };
+		96C20F172EAD063700CA5631 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE22EAD062600CA5631 /* layers.png */; };
+		96C20F182EAD063700CA5631 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE12EAD062600CA5631 /* index.js */; };
+		96C20F192EAD063700CA5631 /* layers-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE32EAD062600CA5631 /* layers-2x.png */; };
+		96C20F1A2EAD063700CA5631 /* leaflet-src.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE62EAD062600CA5631 /* leaflet-src.js */; };
+		96C20F1B2EAD063700CA5631 /* leaflet-src.esm.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE72EAD062600CA5631 /* leaflet-src.esm.js */; };
+		96C20F1C2EAD063700CA5631 /* leaflet.js in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EE52EAD062600CA5631 /* leaflet.js */; };
+		96C20F1D2EAD063700CA5631 /* marker-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EED2EAD062600CA5631 /* marker-shadow.png */; };
+		96C20F1E2EAD063700CA5631 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 96C20EEE2EAD062600CA5631 /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,21 +61,21 @@
 /* Begin PBXFileReference section */
 		96991DC82EABE92B0056F0BC /* Kongernes Jelling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96991DDA2EABF7F40056F0BC /* Kongernes Jelling App Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kongernes Jelling App Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		96C20E942EACE95A00CA5631 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
-		96C20E952EACE95A00CA5631 /* layers-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "layers-2x.png"; sourceTree = "<group>"; };
-		96C20E962EACE95A00CA5631 /* marker-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-icon.png"; sourceTree = "<group>"; };
-		96C20E972EACE95A00CA5631 /* marker-icon-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-icon-2x.png"; sourceTree = "<group>"; };
-		96C20E982EACE95A00CA5631 /* marker-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marker-shadow.png"; sourceTree = "<group>"; };
-		96C20E9A2EACE95A00CA5631 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../Web/public/index.html; sourceTree = SOURCE_ROOT; };
-		96C20E9B2EACE95A00CA5631 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../Web/public/index.js; sourceTree = SOURCE_ROOT; };
-		96C20E9C2EACE95A00CA5631 /* leaflet.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = leaflet.css; path = ../Web/public/leaflet.css; sourceTree = SOURCE_ROOT; };
-		96C20E9D2EACE95A00CA5631 /* leaflet.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = leaflet.js; path = ../Web/public/leaflet.js; sourceTree = SOURCE_ROOT; };
-		96C20E9E2EACE95A00CA5631 /* leaflet-src.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "leaflet-src.js"; path = "../Web/public/leaflet-src.js"; sourceTree = SOURCE_ROOT; };
-		96C20E9F2EACE95A00CA5631 /* leaflet-src.esm.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "leaflet-src.esm.js"; path = "../Web/public/leaflet-src.esm.js"; sourceTree = SOURCE_ROOT; };
-		96C20EA02EACE95A00CA5631 /* leaflet-src.esm.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "leaflet-src.esm.js.map"; path = "../Web/public/leaflet-src.esm.js.map"; sourceTree = SOURCE_ROOT; };
-		96C20EA12EACE95A00CA5631 /* leaflet-src.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "leaflet-src.js.map"; path = "../Web/public/leaflet-src.js.map"; sourceTree = SOURCE_ROOT; };
-		96C20EA22EACE95A00CA5631 /* leaflet.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = leaflet.js.map; path = ../Web/public/leaflet.js.map; sourceTree = SOURCE_ROOT; };
-		96C20EA32EACE95A00CA5631 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../Web/public/style.css; sourceTree = SOURCE_ROOT; };
+		96C20EE02EAD062600CA5631 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = ../Web/public/index.html; sourceTree = SOURCE_ROOT; };
+		96C20EE12EAD062600CA5631 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = index.js; path = ../Web/public/index.js; sourceTree = SOURCE_ROOT; };
+		96C20EE22EAD062600CA5631 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = layers.png; path = ../Web/public/layers.png; sourceTree = SOURCE_ROOT; };
+		96C20EE32EAD062600CA5631 /* layers-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "layers-2x.png"; path = "../Web/public/layers-2x.png"; sourceTree = SOURCE_ROOT; };
+		96C20EE42EAD062600CA5631 /* leaflet.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = leaflet.css; path = ../Web/public/leaflet.css; sourceTree = SOURCE_ROOT; };
+		96C20EE52EAD062600CA5631 /* leaflet.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = leaflet.js; path = ../Web/public/leaflet.js; sourceTree = SOURCE_ROOT; };
+		96C20EE62EAD062600CA5631 /* leaflet-src.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "leaflet-src.js"; path = "../Web/public/leaflet-src.js"; sourceTree = SOURCE_ROOT; };
+		96C20EE72EAD062600CA5631 /* leaflet-src.esm.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "leaflet-src.esm.js"; path = "../Web/public/leaflet-src.esm.js"; sourceTree = SOURCE_ROOT; };
+		96C20EE82EAD062600CA5631 /* leaflet-src.esm.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "leaflet-src.esm.js.map"; path = "../Web/public/leaflet-src.esm.js.map"; sourceTree = SOURCE_ROOT; };
+		96C20EE92EAD062600CA5631 /* leaflet-src.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = "leaflet-src.js.map"; path = "../Web/public/leaflet-src.js.map"; sourceTree = SOURCE_ROOT; };
+		96C20EEA2EAD062600CA5631 /* leaflet.js.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = leaflet.js.map; path = ../Web/public/leaflet.js.map; sourceTree = SOURCE_ROOT; };
+		96C20EEB2EAD062600CA5631 /* marker-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marker-icon.png"; path = "../Web/public/marker-icon.png"; sourceTree = SOURCE_ROOT; };
+		96C20EEC2EAD062600CA5631 /* marker-icon-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marker-icon-2x.png"; path = "../Web/public/marker-icon-2x.png"; sourceTree = SOURCE_ROOT; };
+		96C20EED2EAD062600CA5631 /* marker-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "marker-shadow.png"; path = "../Web/public/marker-shadow.png"; sourceTree = SOURCE_ROOT; };
+		96C20EEE2EAD062600CA5631 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = style.css; path = ../Web/public/style.css; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -136,17 +136,21 @@
 		9682FE1C2EACDADE00DFEB12 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				96C20E992EACE95A00CA5631 /* images */,
-				96C20E9A2EACE95A00CA5631 /* index.html */,
-				96C20E9B2EACE95A00CA5631 /* index.js */,
-				96C20E9C2EACE95A00CA5631 /* leaflet.css */,
-				96C20E9D2EACE95A00CA5631 /* leaflet.js */,
-				96C20E9E2EACE95A00CA5631 /* leaflet-src.js */,
-				96C20E9F2EACE95A00CA5631 /* leaflet-src.esm.js */,
-				96C20EA02EACE95A00CA5631 /* leaflet-src.esm.js.map */,
-				96C20EA12EACE95A00CA5631 /* leaflet-src.js.map */,
-				96C20EA22EACE95A00CA5631 /* leaflet.js.map */,
-				96C20EA32EACE95A00CA5631 /* style.css */,
+				96C20EE02EAD062600CA5631 /* index.html */,
+				96C20EE12EAD062600CA5631 /* index.js */,
+				96C20EE22EAD062600CA5631 /* layers.png */,
+				96C20EE32EAD062600CA5631 /* layers-2x.png */,
+				96C20EE42EAD062600CA5631 /* leaflet.css */,
+				96C20EE52EAD062600CA5631 /* leaflet.js */,
+				96C20EE62EAD062600CA5631 /* leaflet-src.js */,
+				96C20EE72EAD062600CA5631 /* leaflet-src.esm.js */,
+				96C20EE82EAD062600CA5631 /* leaflet-src.esm.js.map */,
+				96C20EE92EAD062600CA5631 /* leaflet-src.js.map */,
+				96C20EEA2EAD062600CA5631 /* leaflet.js.map */,
+				96C20EEB2EAD062600CA5631 /* marker-icon.png */,
+				96C20EEC2EAD062600CA5631 /* marker-icon-2x.png */,
+				96C20EED2EAD062600CA5631 /* marker-shadow.png */,
+				96C20EEE2EAD062600CA5631 /* style.css */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,19 +173,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		96C20E992EACE95A00CA5631 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				96C20E942EACE95A00CA5631 /* layers.png */,
-				96C20E952EACE95A00CA5631 /* layers-2x.png */,
-				96C20E962EACE95A00CA5631 /* marker-icon.png */,
-				96C20E972EACE95A00CA5631 /* marker-icon-2x.png */,
-				96C20E982EACE95A00CA5631 /* marker-shadow.png */,
-			);
-			name = images;
-			path = ../Web/public/images;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -275,18 +266,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C20EB02EACE95A00CA5631 /* marker-shadow.png in Resources */,
-				96C20EB12EACE95A00CA5631 /* leaflet-src.js in Resources */,
-				96C20EB22EACE95A00CA5631 /* leaflet.css in Resources */,
-				96C20EB32EACE95A00CA5631 /* leaflet.js in Resources */,
-				96C20EB42EACE95A00CA5631 /* marker-icon.png in Resources */,
-				96C20EB52EACE95A00CA5631 /* index.html in Resources */,
-				96C20EB62EACE95A00CA5631 /* layers-2x.png in Resources */,
-				96C20EB72EACE95A00CA5631 /* style.css in Resources */,
-				96C20EB82EACE95A00CA5631 /* leaflet-src.esm.js in Resources */,
-				96C20EB92EACE95A00CA5631 /* marker-icon-2x.png in Resources */,
-				96C20EBA2EACE95A00CA5631 /* layers.png in Resources */,
-				96C20EBB2EACE95A00CA5631 /* index.js in Resources */,
+				96C20F072EAD063700CA5631 /* layers-2x.png in Resources */,
+				96C20F082EAD063700CA5631 /* leaflet.js in Resources */,
+				96C20F092EAD063700CA5631 /* leaflet.css in Resources */,
+				96C20F0A2EAD063700CA5631 /* layers.png in Resources */,
+				96C20F0B2EAD063700CA5631 /* marker-icon-2x.png in Resources */,
+				96C20F0C2EAD063700CA5631 /* leaflet-src.js in Resources */,
+				96C20F0D2EAD063700CA5631 /* index.js in Resources */,
+				96C20F0E2EAD063700CA5631 /* leaflet-src.esm.js in Resources */,
+				96C20F0F2EAD063700CA5631 /* marker-shadow.png in Resources */,
+				96C20F102EAD063700CA5631 /* marker-icon.png in Resources */,
+				96C20F112EAD063700CA5631 /* index.html in Resources */,
+				96C20F122EAD063700CA5631 /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,18 +285,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C20EA42EACE95A00CA5631 /* marker-shadow.png in Resources */,
-				96C20EA52EACE95A00CA5631 /* leaflet-src.js in Resources */,
-				96C20EA62EACE95A00CA5631 /* leaflet.css in Resources */,
-				96C20EA72EACE95A00CA5631 /* leaflet.js in Resources */,
-				96C20EA82EACE95A00CA5631 /* marker-icon.png in Resources */,
-				96C20EA92EACE95A00CA5631 /* index.html in Resources */,
-				96C20EAA2EACE95A00CA5631 /* layers-2x.png in Resources */,
-				96C20EAB2EACE95A00CA5631 /* style.css in Resources */,
-				96C20EAC2EACE95A00CA5631 /* leaflet-src.esm.js in Resources */,
-				96C20EAD2EACE95A00CA5631 /* marker-icon-2x.png in Resources */,
-				96C20EAE2EACE95A00CA5631 /* layers.png in Resources */,
-				96C20EAF2EACE95A00CA5631 /* index.js in Resources */,
+				96C20F132EAD063700CA5631 /* leaflet.css in Resources */,
+				96C20F142EAD063700CA5631 /* marker-icon-2x.png in Resources */,
+				96C20F152EAD063700CA5631 /* index.html in Resources */,
+				96C20F162EAD063700CA5631 /* marker-icon.png in Resources */,
+				96C20F172EAD063700CA5631 /* layers.png in Resources */,
+				96C20F182EAD063700CA5631 /* index.js in Resources */,
+				96C20F192EAD063700CA5631 /* layers-2x.png in Resources */,
+				96C20F1A2EAD063700CA5631 /* leaflet-src.js in Resources */,
+				96C20F1B2EAD063700CA5631 /* leaflet-src.esm.js in Resources */,
+				96C20F1C2EAD063700CA5631 /* leaflet.js in Resources */,
+				96C20F1D2EAD063700CA5631 /* marker-shadow.png in Resources */,
+				96C20F1E2EAD063700CA5631 /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
