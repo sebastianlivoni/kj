@@ -114,6 +114,13 @@ L.marker([55.757107790110624, 9.420052567154611], {
 let g_lat;
 let g_lng;
 
+L.marker([55.756568, 9.419600], {
+  icon:greenIcon,
+})
+  .addTo(map)
+  .bindPopup("ᚼᛅᚱᛅᛚᛏᚱ ᚴᚢᚾᚢᚴᛦ ᛒᛅᚦ ᚴᛅᚢᚱᚢᛅ ᚴᚢᛒᛚ ᚦᛅᚢᛋᛁ ᛅᚠᛏ ᚴᚢᚱᛘ ᚠᛅᚦᚢᚱ ᛋᛁᚾ ᛅᚢᚴ ᛅᚠᛏ ᚦᚭᚢᚱᚢᛁ \
+              ᛘᚢᚦᚢᚱ ᛋᛁᚾᛅ ᛋᛅ ᚼᛅᚱᛅᛚᛏᚱ ᛁᛅᛋ ᛋᚭᛦ ᚢᛅᚾ ᛏᛅᚾᛘᛅᚢᚱᚴ ᛅᛚᛅ ᛅᚢᚴ ᚾᚢᚱᚢᛁᛅᚴ ᛅᚢᚴ ᛏᛅᚾᛁ ᚴᛅᚱᚦᛁ ᚴᚱᛁᛋᛏᚾᚭ")
+
 // Add marker on click
 map.on("click", function (e) {
   const { lat, lng } = e.latlng;
