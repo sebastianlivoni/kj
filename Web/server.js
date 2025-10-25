@@ -2,16 +2,26 @@ const express = require('express')
 const http = require("http")
 const { Server } = require("socket.io")
 const { SerialPort } = require("serialport")
+const bodyparser = require("body-parser")
 
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server);
 
+let runemessages = ["message1","message2","message3","message4","message5"];
+
 // Serve static files (your website)
 app.use(express.static("public"));
+app.use(bodyparser.json())
 
 app.get('/stenhaard', (req,res) => {
   res.sendFile(__dirname+ "/public/stenhaard.html");
+})
+app.get('/runestonemessages', (req,res) =>{
+  res.send(JSON.stringify(runemessages))
+})
+app.post('/runestonemessages', (req,res) =>{
+  runemessages[0] = req.body.text;
 })
 
 // Setup serial port
