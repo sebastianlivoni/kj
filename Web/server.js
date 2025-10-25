@@ -1,7 +1,7 @@
-import express from "express";
-import http from "http";
-import { Server } from "socket.io";
-import { SerialPort } from "serialport";
+const express = require('express')
+const http = require("http")
+const { Server } = require("socket.io")
+const { SerialPort } = require("serialport")
 
 const app = express();
 const server = http.createServer(app);
@@ -9,6 +9,10 @@ const io = new Server(server);
 
 // Serve static files (your website)
 app.use(express.static("public"));
+
+app.get('/stenhaard', (req,res) => {
+  res.sendFile(__dirname+ "/public/stenhaard.html");
+})
 
 // Setup serial port
 const port = new SerialPort({
