@@ -8,10 +8,31 @@
 import SwiftUI
 import WebKit
 
+private class DialogPresenter: WebPage.DialogPresenting {
+    var promptHandler: (() async -> String)?
+    
+    func handleJavaScriptPrompt(message: String, defaultText: String?, initiatedBy frame: WebPage.FrameInfo) async -> WebPage.JavaScriptPromptResult {
+        print("hello wolrd")
+        
+        guard let result = await promptHandler?() else {
+            return .cancel
+        }
+        
+        return .ok(result)
+    }
+}
+
 struct ContentView: View {
     private var central = Central()
     
     @State private var page: WebPage
+    private var dialogPresenter: DialogPresenter = .init()
+    
+    @State private var name: String = ""
+    @State private var showAlert: Bool = false
+    @State private var showingAlert: Bool = false
+    @State private var submitHandler: (() -> Void)?
+    @State private var skipHandler: (() -> Void)?
     
     init() {
         var configuration = WebPage.Configuration()
@@ -22,8 +43,8 @@ struct ContentView: View {
         navigationPreference.preferredHTTPSNavigationPolicy = .keepAsRequested
         navigationPreference.preferredContentMode = .mobile
         configuration.defaultNavigationPreferences = navigationPreference
-        
-        let page = WebPage(configuration: configuration)
+
+        let page = WebPage(configuration: configuration, dialogPresenter: dialogPresenter)
         
         self.page = page
     }
@@ -38,8 +59,42 @@ struct ContentView: View {
                     let baseUrl = url.deletingLastPathComponent()
                     page.load(html: contents, baseURL: baseUrl)
                 }
+                
+                dialogPresenter.promptHandler = {
+                    await withCheckedContinuation { continuation in
+                        // Show the alert
+                        Task { @MainActor in
+                            showingAlert = true
+                            
+                            let submitAction = {
+                                showingAlert = false
+                                continuation.resume(returning: name)
+                            }
+                            
+                            let skipAction = {
+                                showingAlert = false
+                                continuation.resume(returning: "") // or nil if you prefer
+                            }
+
+                            // Temporarily store these actions in @State or some container
+                            self.submitHandler = submitAction
+                            self.skipHandler = skipAction
+                        }
+                    }
+                }
             }
             .ignoresSafeArea()
+            .alert("Alert Title!", isPresented: $showingAlert) {
+                TextField("Enter name", text: $name)
+                Button("Submit") {
+                    submitHandler?()
+                }
+                Button("Skip") {
+                    skipHandler?()
+                }
+            } message: {
+                Text("Enter channel name")
+            }
         
         /*VStack(spacing: 20) {
             Text("BLE Central")
