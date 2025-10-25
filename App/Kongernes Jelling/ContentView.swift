@@ -115,6 +115,8 @@ struct ContentView: View {
                             "long": messageHandler.lng
                         ]
                         
+                        name = ""
+                        
                         guard let jsonData = try? JSONSerialization.data(withJSONObject: obj) else {
                             skipHandler?()
                             return
@@ -125,6 +127,7 @@ struct ContentView: View {
                 }
                 Button("Cancel") {
                     skipHandler?()
+                    name = ""
                 }
             } message: {
                 Text("Enter channel name")

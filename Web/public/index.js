@@ -118,7 +118,7 @@ let g_lng;
 map.on("click", function (e) {
   const { lat, lng } = e.latlng;
 
-  window.webkit.messageHandlers.test.postMessage(e.latlng);
+  window.webkit?.messageHandlers.test.postMessage(e.latlng);
 
   // Ask user for the text in a popup
   let tmp = prompt("Enter text for this marker:");
