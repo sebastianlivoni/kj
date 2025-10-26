@@ -1,7 +1,7 @@
 class FIFOQueue {
   constructor() {
     this.queue = [];
-    this.maxSize = 5; // Maximum size of the queue
+    this.maxSize = 10; // Maximum size of the queue
   }
 
   // Add an element to the front of the queue

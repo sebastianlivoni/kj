@@ -6,28 +6,46 @@
     <title>Document</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./stenhaard.js" defer></script>
-  </head>
-  <body>
-    <div id="textBox"></div>
-
     <style>
       body {
         margin: 0;
-        background-image: url("theRock.jpg");
+        background-image: url("bg.png");
         background-size: cover;
-        background-position-y: -160px;
+        background-position-y: -750px;
+      }
+
+      .runecontainer {
+        position: relative; /* make this a positioning context */
+        width: fit-content;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      #runestone {
+        width: 650px;
+        display: block;
       }
 
       #textBox {
+        position: absolute; /* place it over the image */
+        top: 160px; /* adjust how high above the image it sits */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; /* ensure it’s on top of the image */
+        color: white;
+        font-size: 45px;
         text-align: center;
-        color: rgb(36, 0, 0);
-        font-size: 37px;
-        margin-top: 100px;
       }
 
       .msg {
         margin-top: 20px;
       }
     </style>
+  </head>
+  <body>
+    <div class="runecontainer">
+      <div id="textBox">✨ Your Text Here ✨</div>
+      <img id="runestone" src="runestone.png" />
+    </div>
   </body>
 </html>
